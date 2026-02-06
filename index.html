@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDHAN Business Solutions - Financial & Business Solutions</title>
+    <link rel="icon" type="image/png" href="assets/Sudhanlogo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/sudhannewlogo.png" alt="SUDHAN Business Solutions" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line-1">Empowering Your Financial Dreams</span>
+                <span class="line-2">With Trusted Business Solutions</span>
+            </h1>
+            <button class="cta-button" onclick="window.location.href='services.html'">
+                <span>Explore Services</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- EMI Calculator Section -->
+    <section class="emi-section">
+        <div class="container">
+            <h2 class="section-title">EMI Calculator</h2>
+            <div class="emi-calculator">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="loanAmount">Loan Amount</label>
+                        <div class="input-display">
+                            <span class="currency">₹</span>
+                            <span id="loanAmountDisplay">100000</span>
+                        </div>
+                        <input type="range" id="loanAmount" min="100000" max="100000000" value="100000" step="10000">
+                        <div class="range-labels">
+                            <span>₹1L</span>
+                            <span>₹10Cr</span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="interestRate">Rate of Interest (P.A)</label>
+                        <div class="input-display">
+                            <span id="interestRateDisplay">1</span>
+                            <span class="unit">%</span>
+                        </div>
+                        <input type="range" id="interestRate" min="1" max="30" value="1" step="0.1">
+                        <div class="range-labels">
+                            <span>1%</span>
+                            <span>30%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="loanTenure">Loan Tenure</label>
+                        <div class="input-display">
+                            <span id="loanTenureDisplay">1</span>
+                            <span class="unit">Yr</span>
+                        </div>
+                        <input type="range" id="loanTenure" min="1" max="30" value="1" step="1">
+                        <div class="range-labels">
+                            <span>1 Yr</span>
+                            <span>30 Yr</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="calculator-results">
+                    <div class="results-summary">
+                        <div class="result-item">
+                            <span class="result-label">Monthly EMI</span>
+                            <span class="result-value" id="monthlyEMI">₹8,379</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Principal Amount</span>
+                            <span class="result-value" id="principalAmount">₹1,00,000</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Total Interest</span>
+                            <span class="result-value" id="totalInterest">₹542</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Total Amount</span>
+                            <span class="result-value" id="totalAmount">₹1,00,542</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <div class="pie-chart" id="pieChart">
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color principal"></span>
+                                    <span>Principal Amount</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color interest"></span>
+                                    <span>Interest Amount</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <p class="intro-text">At SUDHAN Business Solutions, we bridge the gap between your financial aspirations and reality.</p>
+                <p class="intro-text">With years of expertise and unwavering commitment, we provide comprehensive loan and insurance services.</p>
+                <p class="intro-text">Your success is our mission, and your trust is our foundation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="170">0</div>
+                    <div class="stat-label">Crores Disbursed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Services Offered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="assets/sudhanfulllogo.png" alt="SUDHAN Business Solutions" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919787419244">+91 9787419244</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919790415962">+91 9790415962</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:sudhanbussinesssolutions@gmail.com">sudhanbussinesssolutions@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> NO 68, Pattabiraman Street, Tennur Anna Nagar, Trichy - 620017</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; <span id="currentYear">2026</span> SUDHAN Business Solutions. All rights reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-legal">
+                <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
