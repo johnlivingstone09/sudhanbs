@@ -1,0 +1,13 @@
+LOGO PLACEHOLDER
+
+Please replace this file with your actual company logo:
+- File name: logo.png
+- Recommended size: 200x80 pixels
+- Format: PNG with transparent background
+- Location: assets/logo.png
+
+The logo will appear in:
+- Navigation bar (top-left)
+- Footer (left section)
+
+Make sure the logo has good contrast and is readable on both light and dark backgrounds.
